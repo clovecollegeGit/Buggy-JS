@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    color: #263238;
+    background: linear-gradient(135deg, #e8eef5, #d8e3f0);
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 620px;
+    margin: 30px auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(25, 45, 65, 0.12);
+}
+
+header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: #26384a;
+}
+
+header p,
+footer p {
+    color: #607080;
+}
+
+.todo-entry label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #b8c4d0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 3px solid rgba(49, 112, 170, 0.2);
+    border-color: #3170aa;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #26384a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #365b7c;
+}
+
+.todo-items {
+    margin-top: 30px;
+}
+
+.todo-items h2 {
+    margin-bottom: 12px;
+    color: #26384a;
+}
+
+#todoList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#todoList li {
+    margin: 9px 0;
+    padding: 13px 15px;
+    border: 1px solid #d9e1e8;
+    border-radius: 6px;
+    background-color: #f7f9fb;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+}
+
+#todoList li:hover {
+    background-color: #eaf1f7;
+    border-color: #9db3c7;
+}
+
+#emptyMessage {
+    color: #71808e;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #e3e8ed;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .todo-container {
+        padding: 22px 18px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

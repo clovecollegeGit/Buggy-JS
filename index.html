@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="todo-container">
+
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Keep track of the things you need to get done.</p>
+        </header>
+
+        <section class="todo-entry">
+            <label for="todoInput">New Task</label>
+
+            <div class="input-row">
+                <input
+                    type="text"
+                    id="todoInput"
+                    placeholder="Enter a task..."
+                >
+
+                <button type="button" id="addButton">
+                    Add Task
+                </button>
+            </div>
+        </section>
+
+        <section class="todo-items">
+            <h2>Tasks</h2>
+
+            <p id="emptyMessage">
+                You don't have any tasks yet. Add one above!
+            </p>
+
+            <ul id="todoList"></ul>
+        </section>
+
+        <footer>
+            <p>Tip: Click a task to remove it from your list.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
